@@ -44,146 +44,186 @@
             <article>
                 <h3>Tydzień III</h3>
                 <p>
-                    <ul>
-                        <li>
-                            Definition of done (desription, checklist, ...), w tablicy kanbanowej opisujące warunki
-                            zakończenia danego zadania - przydatne.
-                        </li>
-                        <li>
-                            Nazwnictwo klas css - kebab-case.
-                        </li>
-                        <li>
-                            CSS Specificity - 1. !important, 2. inline styling, 3. id, 4. class, 5. element.
-                        </li>
-                        <li>
-                            <a href="https://specificity.keegan.st">Specificity calculator</a>.
-                        </li>
-                        <li>
-                            Jeżeli specyficzność jest równa, to pierwszeństwo ma selektor "bliżej" elementu - ten, który
-                            deklarowany jest jako ostatni.
-                        </li>
-                        <li>
-                            <a href="http://coolors.co">Coolors</a>.
-                        </li>
-                        <li>
-                            ECMAScript jest standardem spectfikacji języków skryptowych, JavaScrip implementuje elementy
-                            tej specyfikacji.
-                        </li>
-                        <li>
-                            '`' - backtick. Za ich pomocą tworzone są literały w JS. Przykład: `Lorem ipsum ${zmienna_1}
-                            sit ${zmienna_2}`.
-                        </li>
-                    </ul>
+                <ul>
+                    <li>
+                        Definition of done (desription, checklist, ...), w tablicy kanbanowej opisujące warunki
+                        zakończenia danego zadania - przydatne.
+                    </li>
+                    <li>
+                        Nazwnictwo klas css - kebab-case.
+                    </li>
+                    <li>
+                        CSS Specificity - 1. !important, 2. inline styling, 3. id, 4. class, 5. element.
+                    </li>
+                    <li>
+                        <a href="https://specificity.keegan.st">Specificity calculator</a>.
+                    </li>
+                    <li>
+                        Jeżeli specyficzność jest równa, to pierwszeństwo ma selektor "bliżej" elementu - ten, który
+                        deklarowany jest jako ostatni.
+                    </li>
+                    <li>
+                        <a href="http://coolors.co">Coolors</a>.
+                    </li>
+                    <li>
+                        ECMAScript jest standardem spectfikacji języków skryptowych, JavaScrip implementuje elementy
+                        tej specyfikacji.
+                    </li>
+                    <li>
+                        '`' - backtick. Za ich pomocą tworzone są literały w JS. Przykład: `Lorem ipsum ${zmienna_1}
+                        sit ${zmienna_2}`.
+                    </li>
+                </ul>
                 </p>
             </article>
             <article>
                 <h3>Tydzień IV</h3>
                 <p>
+                <ul>
+                    <li><strong>gitk</strong> (gui) + git lens (vscode)</li>
+                    <li>
+                        &lt;div&gt; - nie ma znaczenia semantycznego, używamy gdy chcemy coś "opakować" (tylko kiedy
+                        nie istnieje odpowiedni semantyczny znacznik)
+                    </li>
+                    <li>Własności:</li>
                     <ul>
-                        <li><strong>gitk</strong> (gui) + git lens (vscode)</li>
                         <li>
-                            &lt;div&gt; - nie ma znaczenia semantycznego, używamy gdy chcemy coś "opakować" (tylko kiedy
-                            nie istnieje odpowiedni semantyczny znacznik)
-                        </li>
-                        <li>Własności:</li>
-                        <ul>
-                            <li>
-                                Display:
-                                <ul>
-                                    <li>
-                                        block - generuje blok, obszar elementu, wymuszający break line przed i po
-                                        elemencie,
-                                        domyślnie zajmuje 100% szerokości
-                                    </li>
-                                    <li>
-                                        inline - nie wymusza break line i umieszcza on wszystko koło siebie, w
-                                        pojednynczej
-                                        linii, nie patrząc na ewentualny rozmiar obszaru
-                                    </li>
-                                    <li>
-                                        inline-block - połączenie block i inline, umożliwia tworzenie bloków o zadanej
-                                        powierzchni, ale również pozwala na pozycjonowanie elementów obok siebie w linii
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                Szerokość/długość:
-                                <ul>
-                                    <li>
-                                        width i height - stała szerokość/długość elementu. Przykładowo, gdy zmieni się
-                                        rozmiar okna to element dalej będzie miał stałą szerokość, która może wykraczać
-                                        poza
-                                        rozmiar okna, pojawi się overflow.
-                                    </li>
-                                    <li>
-                                        max-width i max-height - maksymalna szerokość/długość elementu. Element
-                                        maksymalnie
-                                        może mieć dany wymiar, przy zmianie wymiarów okna rozmiar jest aktualizowany,
-                                        np.
-                                        szerokosc okna spadła poniżej 600px i szerokość elementu jest zmieniejszana do
-                                        aktualnego rozmiaru okna. Max-height rzadko używane.
-                                    </li>
-                                    <li>
-                                        min-width i min-height - minimalna szerokość/długość elementu. Analogicznie do
-                                        własności powyżej.
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>Overflow:
-                                <ul>
-                                    <li>hidden</li> - ukrywa scrollbar
-                                    <li>visible</li> - pokazuje scrollbar
-                                    <li><strong>auto</strong> - automatycznie, umożliwia tworzenie scrollbarów dla
-                                        samych elementów, nie dla całego okna</li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <li>
-                            Jednostki:
+                            Display:
                             <ul>
-                                <li>px</li>
-                                <li>%</li>
-                                <li>vw i vh - viewport width i viewport height</li>
+                                <li>
+                                    block - generuje blok, obszar elementu, wymuszający break line przed i po
+                                    elemencie,
+                                    domyślnie zajmuje 100% szerokości
+                                </li>
+                                <li>
+                                    inline - nie wymusza break line i umieszcza on wszystko koło siebie, w
+                                    pojednynczej
+                                    linii, nie patrząc na ewentualny rozmiar obszaru
+                                </li>
+                                <li>
+                                    inline-block - połączenie block i inline, umożliwia tworzenie bloków o zadanej
+                                    powierzchni, ale również pozwala na pozycjonowanie elementów obok siebie w linii
+                                </li>
                             </ul>
                         </li>
                         <li>
-                            Zapisy pełne/skrótowe:
+                            Szerokość/długość:
                             <ul>
-                                <li>Padding/margin:</li>
-                                <ol>
-                                    <li>I. top, II. right, III.bottom, IV.left (jak zegarek)</li>
-                                    <li>I. top/bottom II.left/right (wartości lustrzane)</li>
-                                </ol>
-                                <li>Przykłady:</li>
-                                <ol>
-                                    <li>
-                                        padding-top: 3px;<br>
-                                        padding-right: 4px;<br>
-                                        padding-bottom: 5px;<br>
-                                        padding-left: 6px;<br>
-                                        jest równoważne<br>
-                                        padding: 3px 4px 5px 6px;
-                                    </li>
-                                    <li>
-                                        padding-top: 3px;<br>
-                                        padding-right: 4px;<br>
-                                        padding-bottom: 3px;<br>
-                                        padding-left: 4px;<br>
-                                        jest równoważne<br>
-                                        padding: 3px 4px;
-                                    </li>
-                                </ol>
+                                <li>
+                                    width i height - stała szerokość/długość elementu. Przykładowo, gdy zmieni się
+                                    rozmiar okna to element dalej będzie miał stałą szerokość, która może wykraczać
+                                    poza
+                                    rozmiar okna, pojawi się overflow.
+                                </li>
+                                <li>
+                                    max-width i max-height - maksymalna szerokość/długość elementu. Element
+                                    maksymalnie
+                                    może mieć dany wymiar, przy zmianie wymiarów okna rozmiar jest aktualizowany,
+                                    np.
+                                    szerokosc okna spadła poniżej 600px i szerokość elementu jest zmieniejszana do
+                                    aktualnego rozmiaru okna. Max-height rzadko używane.
+                                </li>
+                                <li>
+                                    min-width i min-height - minimalna szerokość/długość elementu. Analogicznie do
+                                    własności powyżej.
+                                </li>
                             </ul>
+                        </li>
+                        <li>Overflow:
                             <ul>
-                                <li>Border: </li>
-                                border-width: 3px;<br>
-                                border-style: solid;<br>
-                                border-color: #fe201a;<br>
-                                jest równoważne<br>
-                                border: 3px solid #fe201a
+                                <li>hidden</li> - ukrywa scrollbar
+                                <li>visible</li> - pokazuje scrollbar
+                                <li><strong>auto</strong> - automatycznie, umożliwia tworzenie scrollbarów dla
+                                    samych elementów, nie dla całego okna</li>
                             </ul>
                         </li>
                     </ul>
+                    <li>
+                        Jednostki:
+                        <ul>
+                            <li>px</li>
+                            <li>%</li>
+                            <li>vw i vh - viewport width i viewport height</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Zapisy pełne/skrótowe:
+                        <ul>
+                            <li>Padding/margin:</li>
+                            <ol>
+                                <li>I. top, II. right, III.bottom, IV.left (jak zegarek)</li>
+                                <li>I. top/bottom II.left/right (wartości lustrzane)</li>
+                            </ol>
+                            <li>Przykłady:</li>
+                            <ol>
+                                <li>
+                                    padding-top: 3px;<br>
+                                    padding-right: 4px;<br>
+                                    padding-bottom: 5px;<br>
+                                    padding-left: 6px;<br>
+                                    jest równoważne<br>
+                                    padding: 3px 4px 5px 6px;
+                                </li>
+                                <li>
+                                    padding-top: 3px;<br>
+                                    padding-right: 4px;<br>
+                                    padding-bottom: 3px;<br>
+                                    padding-left: 4px;<br>
+                                    jest równoważne<br>
+                                    padding: 3px 4px;
+                                </li>
+                            </ol>
+                        </ul>
+                        <ul>
+                            <li>Border: </li>
+                            border-width: 3px;<br>
+                            border-style: solid;<br>
+                            border-color: #fe201a;<br>
+                            jest równoważne<br>
+                            border: 3px solid #fe201a
+                        </ul>
+                    </li>
+                    <li>margin auto - nadaje wartość automatyczną dla marginesu (potrzebuje zdefiniowane rozmiary
+                        elementu</li>
+                    <li>margin nie należy do elementu</li>
+                    <li>box-sizing:
+                        <ul>border-box - przy tej własności rozmiar elementu zajmuje dokładnie taki obszar jak został mu
+                            nadany, padding oraz border dodawane są do 'wewnątrz'</ul>
+                        <ul>content-box - przy tej własności rozmiar elementu jest zależny od własności width/height
+                            oraz paddingu i borderu, które dodawane są na 'zewnątrz' elementu</ul>
+                    </li>
+                    <li>
+                        Pozycjonowanie elementów przy własnoci - position: absolute jest względem nadrzędnego elementu,
+                        który ma własność - position: relative/absolute, jeżeli nie ma takiego nadrzędnego elementu
+                        pozycjonowanie odbywa się względem elementu html, czyli całej strony.
+                    </li>
+                    <li>Pozostałe własności position
+                        <ul>
+                            <li>
+                                sticky - przydatny <a href="http://caniuse.com/#feat=css-sticky">link</a>
+                            </li>
+                            <li>
+                                fixed
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Float nie służy do budowania layoutów</strong>, dzięki własności float, inne elementy
+                        mogą opływać element z float
+                    </li>
+                    <li>
+                        clear - dopasowuje wysokość elementu do do rozmiarów elementów z float, przyjmuje wartości: left
+                        (dopasowuje się tylko do lewego float), right (tylko do prawego), both (od obydwóch). Podobnie
+                        efekt daje dodanie overflow: hidden do elementu nadrzędnego
+                    </li>
+                    <li>
+                        primitive values w js: String, Number, Bigint, boolean, null, undefined, symbol
+                    </li>
+                    <li>
+                        immutability - nie zmieniamy wartości primitive values w js, zmieniamy tylko połączenia między
+                        nimi a zmiennymi
+                    </li>
+                </ul>
                 </p>
             </article>
         </section>
