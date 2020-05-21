@@ -1,91 +1,284 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-</head>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
 
-<body>
-    <nav>
+  <body>
+    <header class="header shadow-object">
+      <nav class="navigation">
         <!-- <img id="wtf-logo" src="wtf-mini.svg" alt="logo szkolenia"> -->
-        <a href="index.html">Strona Główna</a>
-        <a href="lekcje.html">Materiały</a>
-    </nav>
+        <a href="index.html" class="navigation__link"
+          >Strona Główna</a
+        >
+        <a href="lekcje.html" class="navigation__link navigation__link--current">Notatki</a>
+      </nav>
+    </header>
 
-    <main>
-        <header>
-            <h1>Michał - strona szkoleniowa</h1>
-        </header>
-        <section>
-            <h2>Kim jestem?</h2>
-            <p>
-                Cześć! <br />
-                Mam na imię Michał i jestem studentem Politechniki Poznańskiej.<br />
-                Na codzień pracuję jako Intern Software Engineer w jednej z poznańskich firm IT.<br />
-                Mam nadzieję, że w niedługiej przyszłości, po zakończeniu szkolenia uda mi się znaleźć moją pierwszą
-                pracę na stanowisku Junior Frontend Developer!
-            </p>
-        </section>
-        <section>
-            <h2>Notatki z WTF: Co Ten Frontend</h2>
-            <article>
-                <h3>Tygodnie I i II</h3>
-                <p>
-                    Przerobione w trybie przyspieszonym, ale i skutecznym. Ciekawych elementów, o których wcześniej nie
-                    widziałem: pojęcie sematycznego HTML-a, HTML validator.
-                </p>
-            </article>
-            <article>
-                <h3>Praca domowa: Tydzień II</h3>
-                <p>
-                    Wszystko poszło bez problemów.
-                </p>
-            </article>
-            <article>
-                <h3>Tydzień III</h3>
-                <p>
-                    <ul>
-                        <li>
-                            Definition of done (desription, checklist, ...), w tablicy kanbanowej opisujące warunki
-                            zakończenia danego zadania - przydatne.
-                        </li>
-                        <li>
-                            Nazwnictwo klas css - kebab-case.
-                        </li>
-                        <li>
-                            CSS Specificity - 1. !important, 2. inline styling, 3. id, 4. class, 5. element.
-                        </li>
-                        <li>
-                            <a href="https://specificity.keegan.st">Specificity calculator</a>.
-                        </li>
-                        <li>
-                            Jeżeli specyficzność jest równa, to pierwszeństwo ma selektor "bliżej" elementu - ten, który
-                            deklarowany jest jako ostatni.
-                        </li>
-                        <li>
-                            <a href="http://coolors.co">Coolors</a>.
-                        </li>
-                        <li>
-                            ECMAScript jest standardem spectfikacji języków skryptowych, JavaScrip implementuje elementy
-                            tej specyfikacji.
-                        </li>
-                        <li>
-                            '`' - backtick. Za ich pomocą tworzone są literały w JS. Przykład: `Lorem ipsum ${zmienna_1}
-                            sit ${zmienna_2}`.
-                        </li>
-                    </ul>
-                </p>
-            </article>
+    <main class="content">
+      <header>
+        <h1>
+          Michał - strona szkoleniowa
+        </h1>
+      </header>
 
-        </section>
+      <section class="notes">
+        <h2>Notatki z WTF: Co Ten Frontend</h2>
+
+        <article class="notes__week-summary shadow-object">
+          <h3 class="notes__week-summary--title">Tygodnie I i II</h3>
+
+          <p class="notes__week-summary--notes">
+            Przerobione w trybie przyspieszonym, ale i skutecznym. Ciekawe
+            elementy, o których wcześniej nie widziałem: pojęcie sematycznego
+            HTML-a, HTML validator.
+          </p>
+        </article>
+
+        <article class="notes__week-summary shadow-object">
+          <h3 class="notes__week-summary--title">Tydzień III</h3>
+
+          <ul class="notes__week-summary--notes">
+            <li>
+              Definition of done (desription, checklist, ...), w tablicy
+              kanbanowej opisujące warunki zakończenia danego zadania -
+              przydatne.
+            </li>
+            <li>
+              Nazwnictwo klas css - kebab-case.
+            </li>
+            <li>
+              CSS Specificity - 1. !important, 2. inline styling, 3. id, 4.
+              class, 5. element.
+            </li>
+            <li>
+              <a href="https://specificity.keegan.st">Specificity calculator</a
+              >.
+            </li>
+            <li>
+              Jeżeli specyficzność jest równa, to pierwszeństwo ma selektor
+              "bliżej" elementu - ten, który deklarowany jest jako ostatni.
+            </li>
+            <li><a href="http://coolors.co">Coolors</a>.</li>
+            <li>
+              ECMAScript jest standardem spectfikacji języków skryptowych,
+              JavaScrip implementuje elementy tej specyfikacji.
+            </li>
+            <li>
+              '`' - backtick. Za ich pomocą tworzone są literały w JS. Przykład:
+              `Lorem ipsum ${zmienna_1} sit ${zmienna_2}`.
+            </li>
+          </ul>
+        </article>
+
+        <article class="notes__week-summary shadow-object notes__week-summary--latest">
+          <h3 class="notes__week-summary--title">Tydzień IV</h3>
+
+          <ul class="notes__week-summary--notes">
+            <li><strong>gitk</strong> (gui) + git lens (vscode)</li>
+            <li>
+              &lt;div&gt; - nie ma znaczenia semantycznego, używamy gdy chcemy
+              coś "opakować" (tylko kiedy nie istnieje odpowiedni semantyczny
+              znacznik)
+            </li>
+            <li>
+              Własności:
+              <ul>
+                <li>
+                  Display:
+                  <ul>
+                    <li>
+                      block - generuje blok, obszar elementu, wymuszający break
+                      line przed i po elemencie, domyślnie zajmuje 100%
+                      szerokości
+                    </li>
+                    <li>
+                      inline - nie wymusza break line i umieszcza on wszystko
+                      koło siebie, w pojednynczej linii, nie patrząc na
+                      ewentualny rozmiar obszaru
+                    </li>
+                    <li>
+                      inline-block - połączenie block i inline, umożliwia
+                      tworzenie bloków o zadanej powierzchni, ale również
+                      pozwala na pozycjonowanie elementów obok siebie w linii
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Szerokość/długość:
+                  <ul>
+                    <li>
+                      width i height - stała szerokość/długość elementu.
+                      Przykładowo, gdy zmieni się rozmiar okna to element dalej
+                      będzie miał stałą szerokość, która może wykraczać poza
+                      rozmiar okna, pojawi się overflow.
+                    </li>
+                    <li>
+                      max-width i max-height - maksymalna szerokość/długość
+                      elementu. Element maksymalnie może mieć dany wymiar, przy
+                      zmianie wymiarów okna rozmiar jest aktualizowany, np.
+                      szerokosc okna spadła poniżej 600px i szerokość elementu
+                      jest zmieniejszana do aktualnego rozmiaru okna. Max-height
+                      rzadko używane.
+                    </li>
+                    <li>
+                      min-width i min-height - minimalna szerokość/długość
+                      elementu. Analogicznie do własności powyżej.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Overflow:
+                  <ul>
+                    <li>hidden</li>
+                    - ukrywa scrollbar
+                    <li>visible</li>
+                    - pokazuje scrollbar
+                    <li>
+                      <strong>auto</strong> - automatycznie, umożliwia tworzenie
+                      scrollbarów dla samych elementów, nie dla całego okna
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              Jednostki:
+              <ul>
+                <li>px</li>
+                <li>%</li>
+                <li>vw i vh - viewport width i viewport height</li>
+              </ul>
+            </li>
+            <li>
+              Zapisy pełne/skrótowe:
+              <ul>
+                <li>Padding/margin:</li>
+                <ol>
+                  <li>I. top, II. right, III.bottom, IV.left (jak zegarek)</li>
+                  <li>I. top/bottom II.left/right (wartości lustrzane)</li>
+                </ol>
+                <li>Przykłady:</li>
+                <ol>
+                  <li>
+                    padding-top: 3px;<br />
+                    padding-right: 4px;<br />
+                    padding-bottom: 5px;<br />
+                    padding-left: 6px;<br />
+                    jest równoważne<br />
+                    padding: 3px 4px 5px 6px;
+                  </li>
+                  <li>
+                    padding-top: 3px;<br />
+                    padding-right: 4px;<br />
+                    padding-bottom: 3px;<br />
+                    padding-left: 4px;<br />
+                    jest równoważne<br />
+                    padding: 3px 4px;
+                  </li>
+                </ol>
+              </ul>
+              <ul>
+                <li>Border:</li>
+                border-width: 3px;<br />
+                border-style: solid;<br />
+                border-color: #fe201a;<br />
+                jest równoważne<br />
+                border: 3px solid #fe201a
+              </ul>
+            </li>
+            <li>
+              margin auto - nadaje wartość automatyczną dla marginesu
+              (potrzebuje zdefiniowane rozmiary elementu
+            </li>
+            <li>margin nie należy do elementu</li>
+            <li>
+              box-sizing:
+              <ul>
+                border-box - przy tej własności rozmiar elementu zajmuje
+                dokładnie taki obszar jak został mu nadany, padding oraz border
+                dodawane są do 'wewnątrz'
+              </ul>
+              <ul>
+                content-box - przy tej własności rozmiar elementu jest zależny
+                od własności width/height oraz paddingu i borderu, które
+                dodawane są na 'zewnątrz' elementu
+              </ul>
+            </li>
+            <li>
+              Pozycjonowanie elementów przy własnoci - position: absolute jest
+              względem nadrzędnego elementu, który ma własność - position:
+              relative/absolute, jeżeli nie ma takiego nadrzędnego elementu
+              pozycjonowanie odbywa się względem elementu html, czyli całej
+              strony.
+            </li>
+            <li>
+              Pozostałe własności position
+              <ul>
+                <li>
+                  sticky - przydatny
+                  <a href="http://caniuse.com/#feat=css-sticky">link</a>
+                </li>
+                <li>
+                  fixed
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Float nie służy do budowania layoutów</strong>, dzięki
+              własności float, inne elementy mogą opływać element z float
+            </li>
+            <li>
+              clear - dopasowuje wysokość elementu do do rozmiarów elementów z
+              float, przyjmuje wartości: left (dopasowuje się tylko do lewego
+              float), right (tylko do prawego), both (od obydwóch). Podobnie
+              efekt daje dodanie overflow: hidden do elementu nadrzędnego
+            </li>
+            <li>
+              primitive values w js: String, Number, Bigint, boolean, null,
+              undefined, symbol
+            </li>
+            <li>
+              immutability - nie zmieniamy wartości primitive values w js,
+              zmieniamy tylko połączenia między nimi a zmiennymi
+            </li>
+            <li>
+              BEM (Block-Element_Modifier) - schemat nazewnictwa klas elementów
+              block__element--modifier
+              <ul>
+                <li>Block - nadrzędny element</li>
+                <li>
+                  Element - część bloku (nie musi byćbezpośrednim dzieckiem)
+                </li>
+                <li>
+                  Modifier - jeśli element występuje w kilku wariacjach tworzym
+                  dodatkową klasę
+                </li>
+              </ul>
+            </li>
+            <li>
+              Propozycja workflow'u:
+              <ol>
+                <li>semantyczny html</li>
+                <li>dzielenie elementów na bloki</li>
+                <li>dodanie klas elementów w html'u</li>
+              </ol>
+            </li>
+            <li>
+              Dodanie klasy czysto jsowej - dobra praktyka, pozwala na
+              zachowanie funkcjonalności w JavaScripcie, a nazewnictwo klas
+              stylingowych może się zmieniać.
+            </li>
+          </ul>
+        </article>
+      </section>
     </main>
 
-    <footer>
-        WTF: Co Ten Frontend
+    <footer class="footer">
+      WTF: Co Ten Frontend
     </footer>
-</body>
-
+  </body>
 </html>
