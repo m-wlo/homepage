@@ -1,23 +1,23 @@
 let imie = "Michał";
 
-console.log(`Witaj drogi przybyszu, ja nazywam się ${imie}, a to jest moja strona`);
+console.log(
+  `Witaj drogi przybyszu, ja nazywam się ${imie}, a to jest moja strona`
+);
 
-let notes = document.querySelector(".notes__week-summary--latest");
-notes.innerHTML =
-  '<h3 class="notes__week-summary--title">Tydzień IV</h3>' +
-  '<ul class="notes__week-summary--notes"> ' +
-  "  <li>Rozwiązania tydzień III</li> " +
-  "  <li>Jest GIT!</li> " +
-  "  <li>GitHub</li> " +
-  "  <li>Display, wymiary i overflow</li> " +
-  "  <li>Jednostki</li> " +
-  "  <li>Box model</li> " +
-  "  <li>Box-sizing</li> " +
-  "  <li>Position</li> " +
-  "  <li>Float</li> " +
-  "  <li>Typy danych i immutability</li> " +
-  "  <li>CodeL formatowanie kodu i lokalny serwer</li> " +
-  "  <li>Block - element - modifier</li> " +
-  "  <li>DOMowe przedszkole</li> " +
-  "  <li>Frontend z perspektywy juniora</li> " +
-  "</ul>";
+let intro = document.querySelector(".introduction");
+intro.innerHTML =
+  '<img class="introduction__picture" src="sample_pic.jpg" alt="komputer na biurku" />' +
+  '<div class="introduction__text">' +
+  '<h2 class="introduction__text--header">Kilka słów o mnie</h2>' +
+  '<p class="introduction__text-paragraph">' +
+  "  Cześć! Mam na imię Michał i jestem studentem Politechniki" +
+  "  Poznańskiej." +
+  "</p>" +
+  '<p class="introduction__text--paragraph">' +
+  "  Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />" +
+  "  Magni facilis consequatur animi id, vero ab dolores cumque quisquam," +
+  "  aperiam, iusto eligendi debitis cupiditate cum voluptas. Excepturi," +
+  "  est? Cum, officiis hic." +
+  "</p>" +
+  "</div>" +
+  '<div class="introduction__clear" />';
