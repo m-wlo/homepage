@@ -65,17 +65,17 @@ body {
   color: #011627;
 }
 
-.notes__week-summary {
+.week-summary {
   padding: 16px;
   margin-bottom: 20px;
   background-color: #2EC4B6;
 }
 
-.notes__week-summary--title {
+.week-summary__title {
   color: #E71D36;
 }
 
-.notes__week-summary--latest {
+.week-summary--latest {
   border: 1px #333 solid;
 }
 
