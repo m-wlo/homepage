@@ -28,20 +28,20 @@
       <section class="notes">
         <h2>Notatki z WTF: Co Ten Frontend</h2>
 
-        <article class="notes__week-summary shadow-object">
-          <h3 class="notes__week-summary--title">Tygodnie I i II</h3>
+        <article class="week-summary shadow-object">
+          <h3 class="week-summary__title">Tygodnie I i II</h3>
 
-          <p class="notes__week-summary--notes">
+          <p class="week-summary__notes">
             Przerobione w trybie przyspieszonym, ale i skutecznym. Ciekawe
             elementy, o których wcześniej nie widziałem: pojęcie sematycznego
             HTML-a, HTML validator.
           </p>
         </article>
 
-        <article class="notes__week-summary shadow-object">
-          <h3 class="notes__week-summary--title">Tydzień III</h3>
+        <article class="week-summary shadow-object">
+          <h3 class="week-summary__title">Tydzień III</h3>
 
-          <ul class="notes__week-summary--notes">
+          <ul class="week-summary__notes">
             <li>
               Definition of done (desription, checklist, ...), w tablicy
               kanbanowej opisujące warunki zakończenia danego zadania -
@@ -74,10 +74,10 @@
           </ul>
         </article>
 
-        <article class="notes__week-summary shadow-object">
-          <h3 class="notes__week-summary--title">Tydzień IV</h3>
+        <article class="week-summary shadow-object">
+          <h3 class="week-summary__title">Tydzień IV</h3>
 
-          <ul class="notes__week-summary--notes">
+          <ul class="week-summary__notes">
             <li><strong>gitk</strong> (gui) + git lens (vscode)</li>
             <li>
               &lt;div&gt; - nie ma znaczenia semantycznego, używamy gdy chcemy
@@ -275,10 +275,8 @@
           </ul>
         </article>
 
-        <article
-          class="notes__week-summary shadow-object notes__week-summary--latest"
-        >
-          <h3 class="notes__week-summary--title">Tydzień V</h3>
+        <article class="week-summary shadow-object">
+          <h3 class="week-summary__title">Tydzień V</h3>
 
           <ul>
             <li>
@@ -293,6 +291,171 @@
               czytelność kodu, ale nie są bezpośrednimi zamiennikami
               tradycyjnych deklaracji funkcji (chociaż w większości przypadków
               nie ma między nimi różnicy)
+            </li>
+            <li>
+              JS immutability (również w obiektach) - doczytać!
+            </li>
+            <li>
+              Jakościowe źródła:
+              <ul>
+                <li><a href="https://developer.mozilla.org/pl/">MDN</a></li>
+                <li><a href="https://devdocs.io/">DevDocs</a></li>
+                <li><a href="https://caniuse.com/">Can I Use</a></li>
+                <li>
+                  <a href="https://css-tricks.com/almanac/"
+                    >CSS-Tricks Almanac</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.w3.org/TR/html52/">W3C HTML 5.2</a>
+                </li>
+                <li><a href="https://www.w3.org/TR/CSS/">W3C CSS</a></li>
+              </ul>
+            </li>
+            <li>
+              Definition list &lt;dl&gt; - Rodzaj listy, w której pojęciom
+              przyporządkowujemy definicje.
+              <ul>
+                &lt;dt&gt; - description term
+              </ul>
+              <ul>
+                &lt;dd&gt; - description details
+              </ul>
+            </li>
+            <li>
+              display: flex
+              <ul>
+                <li>
+                  flex-direction - row(domyślnie), column, row/column-reverse
+                </li>
+                <li>flex-wrap: nowrap, wrap, wrap-reverse</li>
+                <li>
+                  flex-flow - połączenie direction i wrap,
+                  &lt;flex-direction&gt; &lt;flex-wrap&gt;
+                </li>
+                <li>
+                  justify-content - ustawianie elementów wzdłuż osi
+                  flex-direction: flex-start, flex-end, center, space-between,
+                  space-around
+                </li>
+                <li>
+                  align-content - ustawianie wierszy/kolumn wzdłuż osi
+                  przeciwnej do flex-direction: stretch (domyślna), flex-start,
+                  flex-end, center, space-between, space-around
+                </li>
+                <li>
+                  align-items - ustawianie elementów wzdłuż osi przeciwnej do
+                  flex-direction: stretch, flex-start, flex-end, center,
+                  baseline
+                </li>
+                <li>
+                  align-self - ustawianie elementu wzdłuż osi przeciwnej do
+                  flex-direction: stretch, flex-start, flex-end, center,
+                  baseline
+                </li>
+                <li>
+                  order - kolejność; 0, liczba całkowita (-/+)
+                </li>
+                <li>
+                  flex-grow - 0, liczba/proporcja
+                </li>
+                <li>
+                  flex-shrink - 1, licza/proporcja
+                </li>
+                <li>
+                  flex-basis - none, rozmiar bazowy
+                </li>
+                <li>
+                  flex: &lt;flex-grow&gt; &lt;flex-shrink&gt; &lt;flex-basis&gt;
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+
+        <article class="week-summary shadow-object week-summary--latest">
+          <h3 class="week-summary__title">Tydzień VI</h3>
+
+          <ul>
+            <li>
+              Forms:
+              <ul>
+                <li>label</li>
+              </ul>
+            </li>
+            <li>
+              display: grid
+              <ul>
+                <li>
+                  Grid Line, Grid Track (Row/Column), Grid Cell, Grid Area
+                </li>
+                <li>
+                  Numeracja rozpoczyna się od 1
+                </li>
+                <li>
+                  grid-template-columns: &lt;wartości po spacji&gt; - tworzy
+                  kolumny o zadanym rozmiarze; działa tylko i wyłącznie
+                  bezpośrednio na swoje dzieci
+                </li>
+                <li>
+                  grid-template-rows: &lt;wartości po spacji&gt; - tworzy
+                  wiersze o zadanej wysokości, w przeciwieństwie do kolumn
+                  opisuje jawnie określoną liczbę wierszy, nie "zapętla"
+                  kolejnych jak w przypadku kolumn
+                </li>
+                <li>
+                  fr - fraction, jednostka rozmiaru wykorzystywana w grid,
+                  pojednynczy fr działa jak licznik ułamka, mianownikiem jest
+                  suma wszystkich fr, przykład: 1fr, 1fr, 2fr - pierwsze dwa
+                  elementu zajmują równo 1/4 rozmiaru (bo 1+1+2=4), a ostatni
+                  zajmuje 1/2 (2/4) rozmiaru. Fr mogą być mieszane z innymi
+                  wartościami, np. %, w takim wypadku rozmiar obliczany jest z
+                  dostępnego rozmiaru ograniczonego przez inne jednostki.
+                </li>
+                <li>
+                  repeat(ilość, rozmiar) - funkcja css, powtarza dany element o
+                  danym rozmiarze zadaną ilość razy
+                </li>
+                <li>
+                  column-gap, row-gap
+                </li>
+                <li>
+                  minmax(min, max) - funkcja css, opisuje minimalny i maksymalny
+                  rozmiar elemntu
+                </li>
+                <li>
+                  grid-template-area - opisuje "słownie" szablon layoutu
+                  (wiersze i kolumny), następnie z wykorzystaniem grid-area
+                  można przypisać poszczególne elemnty do obszarów
+                  zadeklarowanych w szablonie. Możliwe jest dodawanie obszarów
+                  nienazwanych, przez '.', należy wtedy pamiętać o rozmiarze
+                  dodatkowego, nienazwanego obszaru
+                </li>
+                <li>
+                  grid-column-start, grid-column-end i grid-row-start,
+                  grid-row-end - własności opisujące "współrzędne" danego
+                  elementu na obszarze opisywanym przez grid-template-area.
+                  Dodatkowo, przy własnościach końcowych, można wykorzystywać z
+                  słowo kluczowe span, które opisuje ile kolumn/wierszy dany
+                  element ma zajmować, przykład: grid-column-end: span 3 -
+                  element będzie się rozciągał na 3 kolejne kolumny od
+                  początkowej.
+                </li>
+                <li>
+                  Nazywanie obszarów grid - przykład: grid-template-columns:
+                  <strong>[pierwsza]</strong> 1fr <strong>[druga]</strong> 2fr
+                  <strong>[trzecia]</strong> 1fr
+                </li>
+                <li>
+                  grid-area - może połączyć grid-column/row-start/end w jedno,
+                  schemat: <br />
+                  grid-area: row-start / column-start / row-end / column-end
+                  <br />
+                  Podobnie można skrócić pojedynczo row lub column poprzez
+                  własność grid-row lub grid-column, schemat: <br />
+                  grid-column/row: start / end
+                </li>
+              </ul>
             </li>
           </ul>
         </article>
