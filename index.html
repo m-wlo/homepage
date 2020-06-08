@@ -18,14 +18,34 @@
       </nav>
     </header>
 
-    <main class="content content--js">
-      <header>
+    <main class="content-grid content--js">
+      <header class="page-header">
         <h1>
           Michał - strona szkoleniowa
         </h1>
       </header>
 
-      <section class="introduction shadow-object"></section>
+      <section class="introduction">
+        <h2>Kilka słów o mnie</h2>
+        <article class="about-me shadow-object">
+          <img
+            class="about-me__picture"
+            src="sample_pic.jpg"
+            alt="komputer na biurku"
+          />
+
+          <h3 class="about-me__header">
+            Cześć! <br />
+            Mam na imię Michał i jestem studentem Politechniki Poznańskiej.
+          </h3>
+          <p class="about-me__paragraph">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />
+            Magni facilis consequatur animi id, vero ab dolores cumque quisquam,
+            aperiam, iusto eligendi debitis cupiditate cum voluptas. Excepturi,
+            est? Cum, officiis hic.
+          </p>
+        </article>
+      </section>
 
       <section class="notes notes--js">
         <h2>Przerobiony materiał</h2>
@@ -46,7 +66,7 @@
         <article class="week-summary shadow-object">
           <h3 class="week-summary__title">Tydzień II</h3>
 
-          <ul class="notes__week-summary--notes">
+          <ul class="week-summary__notes">
             <li>Rozwiązania tydzień I</li>
             <li>Warstwy strony internetowej</li>
             <li>WTF: HTML</li>
@@ -59,7 +79,7 @@
         <article class="week-summary shadow-object">
           <h3 class="week-summary__title">Tydzień III</h3>
 
-          <ul class="notes__week-summary--notes">
+          <ul class="week-summary__notes">
             <li>Rozwiązania tydzień II</li>
             <li>Kanban</li>
             <li>Opowieść o wężu, kebabie, wielbłądzie i Pascalu</li>
@@ -70,11 +90,9 @@
           </ul>
         </article>
 
-        <article
-          class="week-summary shadow-object"
-        >
+        <article class="week-summary shadow-object">
           <h3 class="week-summary__title">Tydzień IV</h3>
-          <ul class="notes__week-summary--notes">
+          <ul class="week-summary__notes">
             <li>Rozwiązania tydzień III</li>
             <li>Jest GIT!</li>
             <li>GitHub</li>
@@ -92,13 +110,47 @@
           </ul>
         </article>
 
-        <article
-          class="week-summary shadow-object week-summary--latest"
-        >
+        <article class="week-summary shadow-object">
           <h3 class="week-summary__title">Tydzień V</h3>
-          <ul class="notes__week-summary--notes">
+          <ul class="week-summary__notes">
             <li>Rozwiązania tydzień IV</li>
             <li>WTF: Klan</li>
+            <li>JS: funkcje</li>
+            <li>JS: Obiekt</li>
+            <li>JS: Immutability w obiektach</li>
+            <li>U mnie (nie) działa</li>
+            <li>HTML: Listy, tabele, definicje</li>
+            <li>Normalizacja vs reset</li>
+            <li>Flexbox</li>
+            <li>Tła</li>
+            <li>Grafik cięcie - też zajęcie</li>
+          </ul>
+        </article>
+
+        <article class="week-summary shadow-object">
+          <h3 class="week-summary__title">Tydzień VI</h3>
+          <ul class="week-summary__notes">
+            <li>JS: Logika</li>
+            <li>Formularze: form, input & label</li>
+            <li>Formularze: fieldset, radio, checkbox</li>
+            <li>Formularze: select, textarea, submit</li>
+            <li>Formularze: GET i POST</li>
+            <li>Formularze: walidacja</li>
+            <li>CSS: Grid</li>
+            <li>CSS: Grid - podstawowy layout</li>
+            <li>CSS: Media queries & mobile first</li>
+            <li>JS: Eventy</li>
+            <li>Hamburger menu</li>
+            <li>GitHub pages: statyczny hosting</li>
+          </ul>
+        </article>
+
+        <article class="week-summary shadow-object week-summary--latest">
+          <h3 class="week-summary__title">Tydzień VII</h3>
+          <ul class="week-summary__notes">
+            <li>Pseudoelementy & Pseudoselektory</li>
+            <li>.gitignore</li>
+            <li>Node.js</li>
           </ul>
         </article>
       </section>
